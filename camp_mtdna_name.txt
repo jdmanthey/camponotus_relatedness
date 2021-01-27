@@ -1,0 +1,6 @@
+C-003__mtDNA.fastq.gz 1_formicinae_mitogenomes.fastq.gz
+C-011__mtDNA.fastq.gz 2_formicinae_mitogenomes.fastq.gz
+C-012__mtDNA.fastq.gz 3_formicinae_mitogenomes.fastq.gz
+C-013__mtDNA.fastq.gz 4_formicinae_mitogenomes.fastq.gz
+C-031__mtDNA.fastq.gz 5_formicinae_mitogenomes.fastq.gz
+C-032__mtDNA.fastq.gz 6_formicinae_mitogenomes.fastq.gz
