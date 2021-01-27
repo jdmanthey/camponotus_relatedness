@@ -8,7 +8,7 @@
     3. 
 
 # Notes
-    1. The cluster just updated to SLURM, so most of the submission scripts are modified.
+    1. The cluster just updated to SLURM, so most of the submission scripts are modified from previous projects using SGE.
     2. To submit a shell script: sbatch <filename>
     3. To check the jobs queue: squeue -u <username>
     4. To cancel a job: scancel <jobid>
