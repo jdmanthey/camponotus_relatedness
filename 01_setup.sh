@@ -1,5 +1,5 @@
 # start an interactive session and wait to be logged in to a compute node
-interactive
+interactive -c 1 -p quanah
 
 # move to your working directory for this project
 cd /lustre/scratch/jmanthey/04_relatedness_test/
