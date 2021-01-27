@@ -13,6 +13,9 @@ mkdir 02_vcf
 mkdir 03_vcf
 mkdir 04_filtered_vcf
 mkdir 05_related_files
+mkdir 10_align_script
+mkdir 12_filter_scripts
+mkdir 13_convert_scripts
 
 #####################################
 #####################################
