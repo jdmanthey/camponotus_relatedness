@@ -54,9 +54,9 @@
 	write("", file=a.script, append=T)
 	write("module load intel java", file=a.script, append=T)
 	write("", file=a.script, append=T)
-	write("chr_array=$( head -n${SGE_TASK_ID} helper1.txt | tail -n1 )", file=a.script, append=T)
+	write("chr_array=$( head -n${SLURM_ARRAY_TASK_ID} helper1.txt | tail -n1 )", file=a.script, append=T)
 	write("", file=a.script, append=T)
-	write("ind_array=$( head -n${SGE_TASK_ID} helper2.txt | tail -n1 )", file=a.script, append=T)
+	write("ind_array=$( head -n${SLURM_ARRAY_TASK_ID} helper2.txt | tail -n1 )", file=a.script, append=T)
 	write("", file=a.script, append=T)
 	
 	#gatk 4.0
@@ -88,7 +88,7 @@
 	write("", file=a.script, append=T)
 	write("module load intel java", file=a.script, append=T)
 	write("", file=a.script, append=T)
-	write("chr_array=$( head -n${SGE_TASK_ID} helper3.txt | tail -n1 )", file=a.script, append=T)
+	write("chr_array=$( head -n${SLURM_ARRAY_TASK_ID} helper3.txt | tail -n1 )", file=a.script, append=T)
 	write("", file=a.script, append=T)
 		
 	#make list of all vcfs to database
@@ -167,11 +167,11 @@
 	write("", file=a.script, append=T)
 	write("module load intel java", file=a.script, append=T)
 	write("", file=a.script, append=T)
-	write("chr_array=$( head -n${SGE_TASK_ID} helper4.txt | tail -n1 )", file=a.script, append=T)
+	write("chr_array=$( head -n${SLURM_ARRAY_TASK_ID} helper4.txt | tail -n1 )", file=a.script, append=T)
 	write("", file=a.script, append=T)
-	write("interval_array=$( head -n${SGE_TASK_ID} helper5.txt | tail -n1 )", file=a.script, append=T)
+	write("interval_array=$( head -n${SLURM_ARRAY_TASK_ID} helper5.txt | tail -n1 )", file=a.script, append=T)
 	write("", file=a.script, append=T)
-	write("name_array=$( head -n${SGE_TASK_ID} helper6.txt | tail -n1 )", file=a.script, append=T)
+	write("name_array=$( head -n${SLURM_ARRAY_TASK_ID} helper6.txt | tail -n1 )", file=a.script, append=T)
 	write("", file=a.script, append=T)
 
 	#gatk 4.0
