@@ -11,8 +11,8 @@
         c. Run the commands in 03_create_genotype_scripts.r
         d. This creates three nested directories of scripts (11_genotype_scripts) to run in three steps.
     4. Run shell script in 11_genotype_scripts/01_gatk_split
-        f. Once step e finishes, run the shell script in 11_genotype_scripts/02b_gatk_database
-        g. Once step f finishes, run the shell script in 11_genotype_scripts/03b_group_genotype_database
+        a. Once step e finishes, run the shell script in 11_genotype_scripts/02b_gatk_database
+        b. Once step f finishes, run the shell script in 11_genotype_scripts/03b_group_genotype_database
     5. 
 
 ### Notes
