@@ -1,0 +1,12 @@
+3-HThG_S3_R1.fastq.gz	1_R1.fastq.gz
+3-HThG_S3_R2.fastq.gz	1_R2.fastq.gz
+11-HThG_S11_R1.fastq.gz	2_R1.fastq.gz
+11-HThG_S11_R2.fastq.gz	2_R2.fastq.gz
+12-HThG_S12_R1.fastq.gz	3_R1.fastq.gz
+12-HThG_S12_R2.fastq.gz	3_R2.fastq.gz
+13-HThG_S13_R1.fastq.gz	4_R1.fastq.gz
+13-HThG_S13_R2.fastq.gz	4_R2.fastq.gz
+31-HThG_S31_R1.fastq.gz	5_R1.fastq.gz
+31-HThG_S31_R2.fastq.gz	5_R2.fastq.gz
+32-HThG_S32_R1.fastq.gz	6_R1.fastq.gz
+32-HThG_S32_R2.fastq.gz	6_R2.fastq.gz
