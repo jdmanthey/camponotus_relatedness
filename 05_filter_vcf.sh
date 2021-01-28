@@ -14,10 +14,10 @@ input_array=$( head -n${SLURM_ARRAY_TASK_ID} helper6.txt | tail -n1 )
 workdir=/lustre/scratch/jmanthey/04_relatedness_test
 
 # run vcftools with SNP output spaced 10kbp
-vcftools --vcf ${workdir}/03_vcf/${input_array}.g.vcf --max-missing 1.0 --minQ 20 --minGQ 20 --minDP 8 --max-meanDP 50 --min-alleles 2 --max-alleles 2 --mac 1 --thin 10000 --remove-indels --recode --recode-INFO-all --out ${workdir}/04_filtered_vcf_10kbp/${input_array}
+vcftools --vcf ${workdir}/03_vcf/${input_array}.g.vcf --max-missing 1.0 --minQ 20 --minGQ 20 --minDP 8 --max-meanDP 50 --min-alleles 2 --max-alleles 2 --mac 1 --thin 10000 --max-maf 0.49 --remove-indels --recode --recode-INFO-all --out ${workdir}/04_filtered_vcf_10kbp/${input_array}
 
 # run vcftools with SNP output spaced 50kbp
-vcftools --vcf ${workdir}/03_vcf/${input_array}.g.vcf --max-missing 1.0 --minQ 20 --minGQ 20 --minDP 8 --max-meanDP 50 --min-alleles 2 --max-alleles 2 --mac 1 --thin 50000 --remove-indels --recode --recode-INFO-all --out ${workdir}/05_filtered_vcf_50kbp/${input_array}
+vcftools --vcf ${workdir}/03_vcf/${input_array}.g.vcf --max-missing 1.0 --minQ 20 --minGQ 20 --minDP 8 --max-meanDP 50 --min-alleles 2 --max-alleles 2 --mac 1 --thin 50000 --max-maf 0.49 --remove-indels --recode --recode-INFO-all --out ${workdir}/05_filtered_vcf_50kbp/${input_array}
 
 # run bcftools to simplify the vcftools output for the 50kbp spacing
 bcftools query -f '%CHROM\t%POS\t%REF\t%ALT[\t%GT]\n ' ${workdir}/05_filtered_vcf_50kbp/${input_array}.recode.vcf > ${workdir}/05_filtered_vcf_50kbp/${input_array}.simple.vcf
