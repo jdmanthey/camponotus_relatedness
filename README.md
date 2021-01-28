@@ -13,8 +13,9 @@
     4. Run shell script in 11_genotype_scripts/01_gatk_split
         a. Once step e finishes, run the shell script in 11_genotype_scripts/02b_gatk_database
         b. Once step f finishes, run the shell script in 11_genotype_scripts/03b_group_genotype_database
-    5. Do everything in the 04_setup2.sh script
+    5. Do everything in the 04_setup2.sh script interactively.
     6. Run the 05_filter_vcf.sh script
+    7. Perform the steps in 06_concatenate_convert.sh interactively.
 
 ### Notes
     1. The cluster just updated to SLURM, so most of the submission scripts are modified from previous projects using SGE.
