@@ -6,7 +6,7 @@ cd /lustre/scratch/jmanthey/04_relatedness_test/
 cd 06_related_files
 
 # concatenate the simple vcfs from the 10kbp spacing vcf directory to the current working directory
-cat ../04_filtered_vcf_10kbp/*simple.vcf > filtered_10kbp.vcf
+cat ../04_filtered_vcf_100kbp/*simple.vcf > filtered_100kbp.vcf
 
 # concatenate the simple vcfs from the 50kbp spacing vcf directory to the current working directory
 cat ../05_filtered_vcf_50kbp/*simple.vcf > filtered_50kbp.vcf
@@ -23,7 +23,7 @@ R
 
 # run the following R code to convert your files
 source("vcf_to_related.r")
-vcf_to_related("filtered_10kbp.vcf", "filtered_10kbp.related", "camp_popmap.txt")
+vcf_to_related("filtered_100kbp.vcf", "filtered_100kbp.related", "camp_popmap.txt")
 vcf_to_related("filtered_50kbp.vcf", "filtered_50kbp.related", "camp_popmap.txt")
 
 #########
