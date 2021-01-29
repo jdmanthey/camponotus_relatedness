@@ -16,6 +16,10 @@
     5. Do everything in the 04_setup2.sh script interactively.
     6. Run the 05_filter_vcf.sh script
     7. Perform the steps in 06_concatenate_convert.sh interactively.
+    8. Run through the 07_relatedness.r script interactively on your working laptop/desktop. 
+        a. This may take between 30-120 minutes per colony per dataset.
+        b. You'll need to edit the first 11 lines w/ the correct species, colony name, and input file name.
+        c. The output files are named based on what you use in (8b). 
 
 ### Notes
     1. The cluster just updated to SLURM, so most of the submission scripts are modified from previous projects using SGE.
