@@ -23,5 +23,5 @@ vcftools --vcf ${workdir}/03_vcf/${input_array}.g.vcf --max-missing 1.0 --minQ 2
 bcftools query -f '%CHROM\t%POS\t%REF\t%ALT[\t%GT]\n ' ${workdir}/05_filtered_vcf_50kbp/${input_array}.recode.vcf > ${workdir}/05_filtered_vcf_50kbp/${input_array}.simple.vcf
 
 # run bcftools to simplify the vcftools output for the 100kbp spacing
-bcftools query -f '%CHROM\t%POS\t%REF\t%ALT[\t%GT]\n ' ${workdir}/04_filtered_vcf_10kbp/${input_array}.recode.vcf > ${workdir}/04_filtered_vcf_100kbp/${input_array}.simple.vcf
+bcftools query -f '%CHROM\t%POS\t%REF\t%ALT[\t%GT]\n ' ${workdir}/04_filtered_vcf_100kbp/${input_array}.recode.vcf > ${workdir}/04_filtered_vcf_100kbp/${input_array}.simple.vcf
 
