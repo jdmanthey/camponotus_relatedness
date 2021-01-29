@@ -11,7 +11,7 @@ mkdir 01_mtDNA
 mkdir 01_bam_files
 mkdir 02_vcf
 mkdir 03_vcf
-mkdir 04_filtered_vcf_10kbp
+mkdir 04_filtered_vcf_100kbp
 mkdir 05_filtered_vcf_50kbp
 mkdir 06_related_files
 mkdir 10_align_script
