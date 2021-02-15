@@ -4,7 +4,7 @@
 
 ### Steps to run:
     1. Perform all steps in 01_setup.sh interactively.
-    2. Modify the 02_trim_align.sh script as necessary for your directory and submit the script for running.
+    2. Modify the 02_trim_align.sh script as necessary for your directory, put it in your 10_align_script directory, and submit the script for running.
     3. Run an interactive job on the cluster.
         a. Move to your main working directory
         b. Load the module for R (module load R) and start R (R)
