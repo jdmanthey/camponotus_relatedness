@@ -12,6 +12,8 @@ vcf_to_related <- function(input, output, popmap) {
 	# replace all phased genotypes with unphased genotypes
 	for(a in 5:ncol(x)) {
 		x[,a] <- gsub("\\|", "/", x[,a])
+		# zeros considered missing data, so switch to fives (arbitrary choice)
+		x[,a] <- gsub("0", "5", x[,a])
 	}
 	
 	# get genotypes in vector format for each individual
